@@ -58,3 +58,4 @@ normalized during initialization.
         return (beta)**2
     def __repr__(self):
         return f"Qubit:\t{self.alpha} |0\u27E9 \t {self.beta}|1\u27E9"
+__all__=["Qubit"]
