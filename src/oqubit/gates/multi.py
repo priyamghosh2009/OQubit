@@ -1,5 +1,5 @@
 import numpy as np
-from ..core.operators import Gate
+from ..core.operators import Operator,Gate
 """
 These are Qubit gates which require more than two contorls or targets to operate and change the state of an Qubit.
 
