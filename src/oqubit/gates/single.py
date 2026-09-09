@@ -1,5 +1,5 @@
 import numpy as np
-from ..core.operators import Gate
+from ..core.operators import Operator,Gate
 """
 These are Qubit gates which the Qubit to change the state of that Qubit. These Gates does not need any control Qubit logic to act on the Qubit rather performs a straight operation on the target Qubit.
 
