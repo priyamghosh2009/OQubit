@@ -21,6 +21,13 @@ normalized during initialization.
             raise ValueError("Cannot normalize zero state.")
         self.alpha /= norm
         self.beta /= norm
+    def apply(self, gate):
+        if gate.num_qubits!=1:
+            raise ValueError(f"{gate.name} requires {gate.num_qubits} qubits. \n""Use StateVector.apply() for multi-qubit gates.")
+        result = gate @ self.state
+        self.alpha = result[0]
+        self.beta = result[1]
+        return self
     @classmethod
     def i(cls):
         return cls(1 / np.sqrt(2), 1j / np.sqrt(2))
