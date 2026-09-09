@@ -1,4 +1,4 @@
-from ..core.operators import Gate,Operators
+from ..core.operators import Gate,Operator
 import numpy as np
 """
 These are Qubit gates which are cotrolled and requires atleast one Qubit control state to change the state of the other Qubit.
