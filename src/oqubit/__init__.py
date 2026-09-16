@@ -9,7 +9,7 @@ from .measurement.sampling import sample
 from .circuit.circuit import Circuit
 from .circuit.instruction import Instruction
 from .algorithms.deutsch import deutsch
-from .algorithms.deutsch_joza import deutsch_jozsa
+from .algorithms.deutsch_jozsa import deutsch_jozsa
 from .algorithms.bernstein_vazirani import bernstein_vazirani
 from .algorithms.superdense_coding import encode,decode
 __all__=["Qubit",
