@@ -116,6 +116,6 @@ def deutsch_jozsa(function: Callable[[tuple[int, ...]], int],num_qubits: int,) -
         qubits=tuple(range(num_qubits)),
     )
 
-    if all(bit == 0 for bit in result):
+    if result==0:
         return "constant"
     return "balanced"
