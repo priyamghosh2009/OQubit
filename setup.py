@@ -5,14 +5,14 @@ with open("README.md","r") as f:
     description = f.read()
 setup(
     name='oqubit',
-    version='0.1',
+    version='0.1.0',
     install_requires=["numpy>=2.0"],
      package_dir={
-        "": str(BASE_DIR / "src")
+        "":"src"
     },
 
     packages=find_packages(
-        where=str(BASE_DIR / "src")
+        where= "src"
     ),
     python_requires=">=3.9",
     long_description=description,
