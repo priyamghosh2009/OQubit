@@ -254,6 +254,9 @@ class Circuit:
     def depth(self):
         return len(self.instructions)
     @property
+    def notation(self):
+        return self.run().notation
+    @property
     def size(self):
         return len(self.instructions)
     def clear(self):
@@ -267,4 +270,9 @@ class Circuit:
         )
     def __len__(self):
         return len(self.instructions)
+    def __str__(self):
+        return "\n".join(
+            str(instruction)
+            for instruction in self.instructions
+        )
 __all__ = ["Circuit"]
