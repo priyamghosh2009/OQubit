@@ -277,7 +277,6 @@ OQubit/
 ├── scripts/
 │
 ├── CITATION.cff
-├── pyproject.toml
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── SECURITY.md
