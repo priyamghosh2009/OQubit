@@ -25,8 +25,8 @@ It provides a clean, extensible framework for representing qubits, state vectors
 OQubit currently provides implementations of several fundamental quantum algorithms, including:
 
 * Deutsch algorithm
-* Deutsch-Jozsa algorithm
-* Bernstein-Vazirani algorithm
+* Deutsch Jozsa algorithm
+* Bernstein Vazirani algorithm
 * Superdense Coding
 
 More algorithms are being added as the project develops.
@@ -256,33 +256,32 @@ This keeps the algorithms closely connected to the core simulator architecture.
 
 ```text
 OQubit/
-|
-├── src/
-│   └── oqubit/
-│       ├── algorithms/
-│       ├── circuit/
-│       ├── core/
-│       ├── gates/
-│       ├── measurement/
-│       └── __init__.py
-│
-├── tests/
-│
-├── benchmarks/
-│
-├── examples/
-│
-├── docs/
-│
-├── scripts/
-│
-├── CITATION.cff
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── SECURITY.md
-├── LICENSE
-├── README.md
-└── setup.py
+   src/
+     oqubit/
+        algorithms/
+        circuit/
+        core/
+        gates/
+        measurement/
+        __init__.py
+
+   tests/
+
+   benchmarks/
+
+   examples/
+
+   docs/
+
+   scripts/
+
+   CITATION.cff
+   CODE_OF_CONDUCT.md
+   CONTRIBUTING.md
+   SECURITY.md
+   LICENSE
+   README.md
+   setup.py
 ```
 
 ---
@@ -318,15 +317,15 @@ Examples include:
 
 ```text
 examples/
-├── 01_qubit.ipynb
-├── 02_statevector.ipynb
-├── 03_gates.ipynb
-├── 04_circuit.ipynb
-├── ...
-├── 08_deutsch.ipynb
-├── 09_deutsch_jozsa.ipynb
-├── 10_bernstein_vazirani.ipynb
-└── 11_superdense_coding.ipynb
+   01_qubit.ipynb
+   02_statevector.ipynb
+   03_gates.ipynb
+   04_circuit.ipynb
+    ...
+   08_deutsch.ipynb
+   09_deutsch_jozsa.ipynb
+   10_bernstein_vazirani.ipynb
+   11_superdense_coding.ipynb
 ```
 
 The notebooks are intended to make the underlying quantum operations transparent rather than hiding the simulation behind a high-level interface.
@@ -343,9 +342,9 @@ The core layer contains fundamental quantum representations:
 
 ```text
 core/
-├── qubit.py
-├── statevector.py
-└── operators.py
+   qubit.py
+   statevector.py
+   operators.py
 ```
 
 ### Gates
@@ -354,9 +353,9 @@ The gates layer contains quantum gate definitions:
 
 ```text
 gates/
-├── single.py
-├── controlled.py
-└── multi.py
+   single.py
+   controlled.py
+   multi.py
 ```
 
 ### Circuits
@@ -365,8 +364,8 @@ The circuit layer represents sequences of quantum instructions:
 
 ```text
 circuit/
-├── circuit.py
-└── instruction.py
+   circuit.py
+   instruction.py
 ```
 
 ### Measurement
@@ -375,8 +374,8 @@ Measurement and statistical sampling are separated from state representation:
 
 ```text
 measurement/
-├── measurement.py
-└── sampling.py
+   measurement.py
+   sampling.py
 ```
 
 ### Algorithms
@@ -385,10 +384,10 @@ Higher-level quantum algorithms are implemented using the simulator:
 
 ```text
 algorithms/
-|-- deutsch.py
-|-- deutsch_jozsa.py
-├── bernstein_vazirani.py
-└── superdense_coding.py
+   deutsch.py
+   deutsch_jozsa.py
+   bernstein_vazirani.py
+   superdense_coding.py
 ```
 
 This separation is intended to keep the simulator modular and make future backend development easier.
@@ -472,4 +471,4 @@ The project focuses on building a transparent and extensible simulation stack in
 
 ---
 
-**OQubit — Quantum computing, simulated.**
+**OQubit : Quantum computing, simulated.**
