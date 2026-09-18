@@ -4,6 +4,24 @@ All notable changes to OQubit are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and OQubit follows [Semantic Versioning](https://semver.org/).
 
+## [0.1.1] - 2026-09-18
+
+### Fixed
+- Fixed package metadata and distribution configuration.
+- Fixed PyPI project description formatting.
+- Fixed package metadata for author and project information.
+- Fixed documentation rendering issues in the package distribution.
+
+### Changed
+- Improved package description for PyPI.
+- Improved package classifiers and project metadata.
+- Improved package keywords for better discoverability.
+- Updated release metadata for Python package distributions.
+
+### Documentation
+- Improved README and package documentation presentation.
+- Updated project metadata and release information.
+
 ## [0.1.0] - 2026-09-17
 
 Initial release of OQubit.
