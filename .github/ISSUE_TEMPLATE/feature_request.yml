@@ -1,0 +1,78 @@
+name: Feature Request
+description: Suggest a new feature or improvement for OQubit.
+title: "[Feature]: "
+labels: "feature_request"
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## Feature Request
+      ```
+      Thank you for taking the time to suggest a feature for OQubit!
+      Please provide as much detail as possible so that we can understand your proposal.
+      ```
+- type: textarea
+  id: feature-description
+  attributes:
+    label: Feature Description
+    description: Describe the feature or improvement you are requesting in as much detail as possible.
+    placeholder: |
+      Please describe the feature you would like to see in OQubit.
+      Explain what it should do, how it could work, and why it would be useful.
+  validations:
+    required: true
+
+- type: textarea
+  id: use-case
+  attributes:
+    label: Use Case
+    description: Explain the problem this feature would solve or the use case it would support.
+    placeholder: |
+      What problem would this feature solve?
+      How would you or other OQubit users use it?
+  validations:
+    required: true
+
+- type: textarea
+  id: proposed-solution
+  attributes:
+    label: Proposed Solution
+    description: If you have an idea for how this feature could be implemented, describe it here.
+    placeholder: |
+      Describe your proposed approach or implementation idea.
+  validations:
+    required: false
+
+- type: dropdown
+  id: category
+  attributes:
+    label: Feature Category
+    description: Select one or more categories that best describe this feature.
+    multiple: true
+    options:
+      - Qubits
+      - State Vectors
+      - Algorithms
+      - Circuits
+      - Gates
+      - Instructions
+      - API
+      - Quantum AI
+      - Density Matrices
+      - Noise
+      - Quantum ML
+      - Performance
+      - Documentation
+      - Other
+  validations:
+    required: true
+
+- type: textarea
+  id: additional-context
+  attributes:
+    label: Additional Context
+    description: Add any other information, examples, references, or screenshots that may help explain your request.
+    placeholder: |
+      Add any additional context here.
+  validations:
+    required: false
