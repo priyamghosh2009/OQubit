@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions
+    url: https://github.com/priyamghosh2009/OQubit/discussions/categories/q-a
+    about: You can join the discussions on GitHub 
+  - name: OQubit Documentation
+    url: https://github.com/priyamghosh2009/OQubit/tree/main/docs
+    about: Read the documentation before opening an issue.
+  - name: OQubit Security
+    url: https://github.com/priyamghosh2009/OQubit/security/advisories/new
+    about: Privately report a security vulnerability in OQubit.
